@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		06B93B953FB6E46769743352 /* Pods_GoogleMapProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535144AA26530DBF08C7E7BC /* Pods_GoogleMapProject.framework */; };
+		495293C41DEEB81800585615 /* PlaceDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495293C31DEEB81800585615 /* PlaceDetailController.swift */; };
+		495293C61DEEBB4700585615 /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495293C51DEEBB4700585615 /* PlaceCell.swift */; };
+		495293C91DEEBEE300585615 /* GlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495293C81DEEBEE300585615 /* GlobalConfig.swift */; };
+		495293CB1DEEBF6E00585615 /* PlaceHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495293CA1DEEBF6E00585615 /* PlaceHeaderView.swift */; };
+		495293CD1DEEC38400585615 /* PlaceDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495293CC1DEEC38400585615 /* PlaceDataSource.swift */; };
 		4980ADF01DED4E4B0027BF37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4980ADEF1DED4E4B0027BF37 /* AppDelegate.swift */; };
 		4980ADF21DED4E4B0027BF37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4980ADF11DED4E4B0027BF37 /* ViewController.swift */; };
 		4980ADF51DED4E4B0027BF37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4980ADF31DED4E4B0027BF37 /* Main.storyboard */; };
@@ -27,6 +32,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		495293C31DEEB81800585615 /* PlaceDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDetailController.swift; sourceTree = "<group>"; };
+		495293C51DEEBB4700585615 /* PlaceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
+		495293C81DEEBEE300585615 /* GlobalConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConfig.swift; sourceTree = "<group>"; };
+		495293CA1DEEBF6E00585615 /* PlaceHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceHeaderView.swift; sourceTree = "<group>"; };
+		495293CC1DEEC38400585615 /* PlaceDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDataSource.swift; sourceTree = "<group>"; };
 		4980ADEC1DED4E4B0027BF37 /* GoogleMapProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleMapProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4980ADEF1DED4E4B0027BF37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4980ADF11DED4E4B0027BF37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +79,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		495293C11DEEB7F600585615 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4980ADF11DED4E4B0027BF37 /* ViewController.swift */,
+				495293C31DEEB81800585615 /* PlaceDetailController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		495293C21DEEB7FE00585615 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				495293C51DEEBB4700585615 /* PlaceCell.swift */,
+				495293CA1DEEBF6E00585615 /* PlaceHeaderView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		495293C71DEEBECA00585615 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				495293CC1DEEC38400585615 /* PlaceDataSource.swift */,
+				495293C81DEEBEE300585615 /* GlobalConfig.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		4980ADE31DED4E4B0027BF37 = {
 			isa = PBXGroup;
 			children = (
@@ -92,8 +129,10 @@
 		4980ADEE1DED4E4B0027BF37 /* GoogleMapProject */ = {
 			isa = PBXGroup;
 			children = (
+				495293C71DEEBECA00585615 /* Model */,
+				495293C21DEEB7FE00585615 /* View */,
+				495293C11DEEB7F600585615 /* ViewController */,
 				4980ADEF1DED4E4B0027BF37 /* AppDelegate.swift */,
-				4980ADF11DED4E4B0027BF37 /* ViewController.swift */,
 				4980ADF31DED4E4B0027BF37 /* Main.storyboard */,
 				4980ADF61DED4E4B0027BF37 /* Assets.xcassets */,
 				4980ADF81DED4E4B0027BF37 /* LaunchScreen.storyboard */,
@@ -276,8 +315,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495293C41DEEB81800585615 /* PlaceDetailController.swift in Sources */,
 				4980ADF21DED4E4B0027BF37 /* ViewController.swift in Sources */,
 				4980ADF01DED4E4B0027BF37 /* AppDelegate.swift in Sources */,
+				495293CD1DEEC38400585615 /* PlaceDataSource.swift in Sources */,
+				495293C61DEEBB4700585615 /* PlaceCell.swift in Sources */,
+				495293C91DEEBEE300585615 /* GlobalConfig.swift in Sources */,
+				495293CB1DEEBF6E00585615 /* PlaceHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

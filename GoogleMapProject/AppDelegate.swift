@@ -27,6 +27,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         GMSServices.provideAPIKey(GoogleAPIKEY)
         GMSPlacesClient.provideAPIKey(GoogleAPIKEY)
+        
+        
+        let nav = UINavigationController(rootViewController: ViewController())
+        self.window?.rootViewController = nav
         return true
     }
 

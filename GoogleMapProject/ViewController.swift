@@ -25,6 +25,7 @@ class ViewController: UIViewController,GMSMapViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.white
         // Do any additional setup after loading the view, typically from a nib.
         initMapView()
         initView()
@@ -47,6 +48,13 @@ class ViewController: UIViewController,GMSMapViewDelegate {
         googleMap.settings.compassButton = true
         googleMap.settings.myLocationButton = true
         self.view.addSubview(googleMap)
+        
+        
+        let marker = GMSMarker()
+        marker.position = camera.target
+        marker.snippet = "Hello World"
+        marker.appearAnimation = kGMSMarkerAnimationPop
+        marker.map = googleMap
         
         googleMap.snp.makeConstraints { (make) in
             make.left.equalTo(0)
@@ -201,6 +209,7 @@ extension ViewController{
         let northEast = CLLocationCoordinate2DMake(center.latitude + 0.001, center.longitude + 0.001)
         let southWest = CLLocationCoordinate2DMake(center.latitude - 0.001, center.longitude - 0.001)
         let viewport = GMSCoordinateBounds(coordinate: northEast, coordinate: southWest)
+        
         let config = GMSPlacePickerConfig(viewport: viewport)
         placePicker = GMSPlacePicker(config: config)
         
@@ -211,6 +220,12 @@ extension ViewController{
             }
             
             if let place = place{
+                
+                //create the next view controller,we are going to display and present it
+                let nextScreen = PlaceDetailController(place: place)
+                
+                self.navigationController?.pushViewController(nextScreen, animated: true)
+                
                 print("Place name \(place.name)")
                 print("Place address \(place.formattedAddress)")
                 print("Place attributions \(place.attributions)")
