@@ -27,7 +27,6 @@ class PlaceCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         iconImgView = UIImageView()
-        iconImgView.contentMode = .scaleAspectFit
         self.addSubview(iconImgView)
         
         iconImgView.snp.makeConstraints { (make) in

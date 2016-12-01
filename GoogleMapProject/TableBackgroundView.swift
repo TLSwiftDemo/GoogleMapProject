@@ -26,8 +26,7 @@ class TableBackgroundView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         picImgView = UIImageView()
-        picImgView.contentMode = .scaleAspectFit
-        picImgView.image = UIImage(named:"IMG_0641")
+        picImgView.image = UIImage(named:"test")
         self.addSubview(picImgView)
         
         picImgView.snp.makeConstraints { (make) in

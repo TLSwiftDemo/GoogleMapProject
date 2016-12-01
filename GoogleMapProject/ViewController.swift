@@ -22,6 +22,11 @@ class ViewController: UIViewController,GMSMapViewDelegate {
     var searchBtn:UIButton!
     var filterBtn:UIButton!
     var locateBtn:UIButton!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

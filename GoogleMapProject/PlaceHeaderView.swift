@@ -11,7 +11,7 @@ import SnapKit
 import GooglePlaces
 import GoogleMaps
 
-class PlaceHeaderView: UIView {
+class PlaceHeaderView: UITableViewHeaderFooterView {
     
 
    private var placeNameLb:UILabel!
@@ -25,20 +25,27 @@ class PlaceHeaderView: UIView {
             topSpace = compact ? 9 : 29
         }
     }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override init(reuseIdentifier: String?) {
+        super.init(reuseIdentifier: reuseIdentifier)
+        self.contentView.backgroundColor = Colors.blue2
         placeNameLb = UILabel()
-        placeNameLb.font = UIFont.boldSystemFont(ofSize: 22)
+        placeNameLb.textColor = UIColor.white
+        placeNameLb.font = UIFont.boldSystemFont(ofSize: 20)
+        placeNameLb.lineBreakMode = .byCharWrapping
+        placeNameLb.numberOfLines = 0
+        placeNameLb.backgroundColor = Colors.blue2
         addSubview(placeNameLb)
         
         placeNameLb.snp.makeConstraints { (make) in
-            make.left.equalTo(20)
-            make.centerY.equalTo(self.snp.centerY)
-            make.size.equalTo(CGSize(width: 200, height: 30))
+            make.left.equalTo(15)
+            make.right.equalTo(-15)
+            make.top.equalTo(0)
+            make.bottom.equalTo(0)
         }
-    
+
     }
+    
+   
 
     
     func setDataSource(place:GMSPlace) {
