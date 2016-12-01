@@ -18,18 +18,14 @@ class PlaceDataSource: NSObject,UITableViewDelegate,UITableViewDataSource {
     fileprivate let place: GMSPlace
     private let blueCellIdentifier = "BlueCellIdentifier"
     
-    private var tableView:UITableView!
     
     
     init(place:GMSPlace,tableView:UITableView) {
         self.place = place
-        self.tableView = tableView
+//        self.tableView = tableView
     }
     
-}
-
-extension PlaceDataSource{
- //MARK: - UITableview dataSource
+    //MARK: - UITableview dataSource
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -43,7 +39,7 @@ extension PlaceDataSource{
         if indexPath.item == 0{
             var cell = tableView.dequeueReusableCell(withIdentifier: cellIdentity1)
             if cell == nil{
-               cell = PlaceCell(style: .default, reuseIdentifier: cellIdentity1)
+                cell = PlaceCell(style: .default, reuseIdentifier: cellIdentity1)
             }
             cell?.backgroundColor = Colors.blue2
             cell?.selectionStyle = .none
@@ -55,15 +51,19 @@ extension PlaceDataSource{
         var cell = tableView.dequeueReusableCell(withIdentifier: cellIdentity2)
         if cell == nil
         {
-         cell = PlaceCell(style: .default, reuseIdentifier: cellIdentity2)
+            cell = PlaceCell(style: .default, reuseIdentifier: cellIdentity2)
         }
         //Disable selection
         cell?.selectionStyle = .none
-       
+        
         (cell as! PlaceCell).setDataSource(place: place, index: indexPath.row)
         
         return cell!
         
         
     }
+
+    
 }
+
+

@@ -19,6 +19,8 @@
 		4980ADF71DED4E4B0027BF37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4980ADF61DED4E4B0027BF37 /* Assets.xcassets */; };
 		4980ADFA1DED4E4B0027BF37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4980ADF81DED4E4B0027BF37 /* LaunchScreen.storyboard */; };
 		4980AE051DED4E4B0027BF37 /* GoogleMapProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4980AE041DED4E4B0027BF37 /* GoogleMapProjectTests.swift */; };
+		49DBE6351DF015CD00E6FC0A /* TableBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DBE6341DF015CD00E6FC0A /* TableBackgroundView.swift */; };
+		49DBE6371DF0175D00E6FC0A /* IMG_0641.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49DBE6361DF0175D00E6FC0A /* IMG_0641.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		4980AE001DED4E4B0027BF37 /* GoogleMapProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleMapProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4980AE041DED4E4B0027BF37 /* GoogleMapProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapProjectTests.swift; sourceTree = "<group>"; };
 		4980AE061DED4E4B0027BF37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49DBE6341DF015CD00E6FC0A /* TableBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableBackgroundView.swift; sourceTree = "<group>"; };
+		49DBE6361DF0175D00E6FC0A /* IMG_0641.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0641.jpg; sourceTree = "<group>"; };
 		535144AA26530DBF08C7E7BC /* Pods_GoogleMapProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleMapProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58949C465170E91C1929943B /* Pods-GoogleMapProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMapProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleMapProject/Pods-GoogleMapProject.debug.xcconfig"; sourceTree = "<group>"; };
 		E0556B5D77927DEAC36EADB2 /* Pods-GoogleMapProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMapProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleMapProject/Pods-GoogleMapProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +86,7 @@
 		495293C11DEEB7F600585615 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				495293CC1DEEC38400585615 /* PlaceDataSource.swift */,
 				4980ADF11DED4E4B0027BF37 /* ViewController.swift */,
 				495293C31DEEB81800585615 /* PlaceDetailController.swift */,
 			);
@@ -93,6 +98,7 @@
 			children = (
 				495293C51DEEBB4700585615 /* PlaceCell.swift */,
 				495293CA1DEEBF6E00585615 /* PlaceHeaderView.swift */,
+				49DBE6341DF015CD00E6FC0A /* TableBackgroundView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -100,7 +106,7 @@
 		495293C71DEEBECA00585615 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				495293CC1DEEC38400585615 /* PlaceDataSource.swift */,
+				49DBE6361DF0175D00E6FC0A /* IMG_0641.jpg */,
 				495293C81DEEBEE300585615 /* GlobalConfig.swift */,
 			);
 			name = Model;
@@ -249,6 +255,7 @@
 			files = (
 				4980ADFA1DED4E4B0027BF37 /* LaunchScreen.storyboard in Resources */,
 				4980ADF71DED4E4B0027BF37 /* Assets.xcassets in Resources */,
+				49DBE6371DF0175D00E6FC0A /* IMG_0641.jpg in Resources */,
 				4980ADF51DED4E4B0027BF37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +329,7 @@
 				495293C61DEEBB4700585615 /* PlaceCell.swift in Sources */,
 				495293C91DEEBEE300585615 /* GlobalConfig.swift in Sources */,
 				495293CB1DEEBF6E00585615 /* PlaceHeaderView.swift in Sources */,
+				49DBE6351DF015CD00E6FC0A /* TableBackgroundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

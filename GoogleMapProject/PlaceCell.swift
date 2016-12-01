@@ -33,7 +33,7 @@ class PlaceCell: UITableViewCell {
         iconImgView.snp.makeConstraints { (make) in
             make.left.equalTo(15)
             make.centerY.equalTo(self.snp.centerY)
-            make.size.equalTo(CGSize(width: 40, height: 40))
+            make.size.equalTo(CGSize(width: 30, height: 30))
         }
         
         namelb = UILabel()
@@ -43,18 +43,20 @@ class PlaceCell: UITableViewCell {
         
         namelb.snp.makeConstraints { (make) in
             make.left.equalTo(iconImgView.snp.right).offset(15)
-            make.bottom.equalTo(iconImgView.snp.top)
+            make.top.equalTo(10)
             make.right.equalTo(0)
             make.height.equalTo(20)
         }
         
         valuelb = UILabel()
+        valuelb.numberOfLines = 0
+        valuelb.lineBreakMode = .byCharWrapping
         self.addSubview(valuelb)
         valuelb.snp.makeConstraints { (make) in
             make.left.equalTo(namelb.snp.left)
-            make.top.equalTo(namelb.snp.bottom)
+            make.top.equalTo(namelb.snp.bottom).offset(5)
             make.right.equalTo(0)
-            make.bottom.equalTo(0)
+            make.bottom.equalTo(-10)
         }
         
         
@@ -69,30 +71,21 @@ class PlaceCell: UITableViewCell {
     /// Return the appropriate text string for the specified |GMSPlacesOpenNowStatus|.
      func text(for status: GMSPlacesOpenNowStatus) -> String {
         switch status {
-        case .no: return NSLocalizedString("Places.OpenNow.No",
-                                           comment: "Closed/Open state for a closed location")
-        case .yes: return NSLocalizedString("Places.OpenNow.Yes",
-                                            comment: "Closed/Open state for an open location")
-        case .unknown: return NSLocalizedString("Places.OpenNow.Unknown",
-                                                comment: "Closed/Open state for when it is unknown")
+        case .no: return "OpenNow.No"
+        case .yes: return "OpenNow.Yes"
+        case .unknown: return "Unknown"
         }
     }
     
     /// Return the appropriate text string for the specified |GMSPlacesPriceLevel|.
      func text(priceLevel: GMSPlacesPriceLevel) -> String {
         switch priceLevel {
-        case .free: return NSLocalizedString("Places.PriceLevel.Free",
-                                             comment: "Relative cost for a free location")
-        case .cheap: return NSLocalizedString("Places.PriceLevel.Cheap",
-                                              comment: "Relative cost for a cheap location")
-        case .medium: return NSLocalizedString("Places.PriceLevel.Medium",
-                                               comment: "Relative cost for a medium cost location")
-        case .high: return NSLocalizedString("Places.PriceLevel.High",
-                                             comment: "Relative cost for a high cost location")
-        case .expensive: return NSLocalizedString("Places.PriceLevel.Expensive",
-                                                  comment: "Relative cost for an expensive location")
-        case .unknown: return NSLocalizedString("Places.PriceLevel.Unknown",
-                                                comment: "Relative cost for when it is unknown")
+        case .free: return "Free"
+        case .cheap: return "Cheap"
+        case .medium: return "Medium"
+        case .high: return "High"
+        case .expensive: return "Expensive"
+        case .unknown: return "Unknown"
         }
     }
     

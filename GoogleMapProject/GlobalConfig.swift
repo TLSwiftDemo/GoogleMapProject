@@ -32,35 +32,25 @@ enum PlaceProperty: Int {
     func localizedDescription() -> String {
         switch self {
         case .placeID:
-            return NSLocalizedString("Places.Property.PlaceID",
-                                     comment: "Name for the Place ID property")
+            return "PlaceID"
         case .coordinate:
-            return NSLocalizedString("Places.Property.Coordinate",
-                                     comment: "Name for the Coordinate property")
+            return "Coordinate"
         case .openNowStatus:
-            return NSLocalizedString("Places.Property.OpenNowStatus",
-                                     comment: "Name for the Open now status property")
+            return "OpenNowStatus"
         case .phoneNumber:
-            return NSLocalizedString("Places.Property.PhoneNumber",
-                                     comment: "Name for the Phone number property")
+            return "PhoneNumber"
         case .website:
-            return NSLocalizedString("Places.Property.Website",
-                                     comment: "Name for the Website property")
+            return "Website"
         case .formattedAddress:
-            return NSLocalizedString("Places.Property.FormattedAddress",
-                                     comment: "Name for the Formatted address property")
+            return "FormattedAddress"
         case .rating:
-            return NSLocalizedString("Places.Property.Rating",
-                                     comment: "Name for the Rating property")
+            return "Rating"
         case .priceLevel:
-            return NSLocalizedString("Places.Property.PriceLevel",
-                                     comment: "Name for the Price level property")
+            return "PriceLevel"
         case .types:
-            return NSLocalizedString("Places.Property.Types",
-                                     comment: "Name for the Types property")
+            return "Types"
         case .attribution:
-            return NSLocalizedString("Places.Property.Attributions",
-                                     comment: "Name for the Attributions property")
+            return "Attributions"
         }
     }
     

@@ -8,6 +8,8 @@
 
 import UIKit
 import SnapKit
+import GooglePlaces
+import GoogleMaps
 
 class PlaceHeaderView: UIView {
     
@@ -38,6 +40,10 @@ class PlaceHeaderView: UIView {
     
     }
 
+    
+    func setDataSource(place:GMSPlace) {
+        self.placeNameLb.text = place.name
+    }
     
        
     
