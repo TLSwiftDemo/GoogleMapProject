@@ -14,7 +14,7 @@ import GoogleMaps
 class PlaceHeaderView: UITableViewHeaderFooterView {
     
 
-   private var placeNameLb:UILabel!
+    var placeNameLb:UILabel!
     //距离左边的距离
     var leadingSpace:CGFloat!
     //具体顶部的距离
@@ -40,7 +40,7 @@ class PlaceHeaderView: UITableViewHeaderFooterView {
             make.left.equalTo(15)
             make.right.equalTo(-15)
             make.top.equalTo(0)
-            make.bottom.equalTo(0)
+            make.bottom.equalTo(30)
         }
 
     }

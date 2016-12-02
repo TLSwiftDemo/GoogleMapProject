@@ -47,11 +47,10 @@ class ViewController: UIViewController,GMSMapViewDelegate {
         googleMap.delegate = self
         googleMap.camera = camera
         googleMap.isTrafficEnabled = true
-        //googleMap.isMyLocationEnabled = true
         googleMap.isBuildingsEnabled=true
         
         googleMap.settings.compassButton = true
-        googleMap.settings.myLocationButton = true
+//        googleMap.settings.myLocationButton = true
         self.view.addSubview(googleMap)
         
         

@@ -12,8 +12,8 @@ import GooglePlaces
 import SnapKit
 
 class TableBackgroundView: UIView {
-    private var picImgView:UIImageView!
-    private var mapView:GMSMapView!
+    public var picImgView:UIImageView!
+    public var mapView:GMSMapView!
 
     /*
     // Only override draw() if you perform custom drawing.
@@ -26,14 +26,14 @@ class TableBackgroundView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         picImgView = UIImageView()
-        picImgView.image = UIImage(named:"test")
+        picImgView.image = UIImage(named:"World_location_map")
         self.addSubview(picImgView)
         
         picImgView.snp.makeConstraints { (make) in
             make.left.equalTo(0)
             make.top.equalTo(0)
             make.right.equalTo(0)
-            make.height.equalTo(120)
+            make.height.equalTo(200)
         }
     }
     
