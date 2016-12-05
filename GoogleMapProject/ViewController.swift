@@ -39,6 +39,9 @@ class ViewController: UIViewController,GMSMapViewDelegate {
     
     func initMapView() -> Void {
 
+        
+        
+        
         let coordinate = CLLocationCoordinate2D(latitude: 38.8879, longitude: -77.0200)
         let camera = GMSCameraPosition(target: coordinate, zoom: 17, bearing: 0, viewingAngle: 10)
         

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		06B93B953FB6E46769743352 /* Pods_GoogleMapProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535144AA26530DBF08C7E7BC /* Pods_GoogleMapProject.framework */; };
-		49439CF51DF049B80089F1BF /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 49439CF41DF049B80089F1BF /* test.png */; };
 		49439CF71DF1985C0089F1BF /* World_location_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 49439CF61DF1985C0089F1BF /* World_location_map.png */; };
 		495293C41DEEB81800585615 /* PlaceDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495293C31DEEB81800585615 /* PlaceDetailController.swift */; };
 		495293C61DEEBB4700585615 /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495293C51DEEBB4700585615 /* PlaceCell.swift */; };
@@ -35,7 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		49439CF41DF049B80089F1BF /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		49439CF61DF1985C0089F1BF /* World_location_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = World_location_map.png; sourceTree = "<group>"; };
 		495293C31DEEB81800585615 /* PlaceDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDetailController.swift; sourceTree = "<group>"; };
 		495293C51DEEBB4700585615 /* PlaceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				49439CF61DF1985C0089F1BF /* World_location_map.png */,
-				49439CF41DF049B80089F1BF /* test.png */,
 				495293C81DEEBEE300585615 /* GlobalConfig.swift */,
 			);
 			name = Model;
@@ -256,7 +253,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49439CF51DF049B80089F1BF /* test.png in Resources */,
 				49439CF71DF1985C0089F1BF /* World_location_map.png in Resources */,
 				4980ADFA1DED4E4B0027BF37 /* LaunchScreen.storyboard in Resources */,
 				4980ADF71DED4E4B0027BF37 /* Assets.xcassets in Resources */,
